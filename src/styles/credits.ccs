@@ -1,0 +1,139 @@
+/* src/styles/credits.css */
+
+/* SECCIÓN DE PRODUCTOS CREDITICIOS */
+.seccion-creditos {
+  padding: 3rem 0;
+  background-color: white;
+}
+
+.seccion-creditos h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #061f48;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* --- REGLA AÑADIDA PARA IMAGEN --- */
+/* Fija la altura de la imagen para alinear los títulos */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* GRID DE TARJETAS */
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0 20px;
+}
+
+/* --- TARJETA INDIVIDUAL (MODIFICADA) --- */
+.credit-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.credit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(1, 21, 131, 0.2);
+}
+
+/* --- CONTENIDO INTERNO --- */
+.card-content {
+  padding: 1.5rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* --- TÍTULO (MODIFICADO) --- */
+.credit-title {
+  color: #061f48;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  margin: 0 0 0.75rem 0;
+  min-height: 2.8rem;
+  display: flex;
+  align-items: center;
+}
+
+/* --- DETALLES Y DESCRIPCIÓN --- */
+.details {
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #9fda93;
+}
+
+.label {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.value {
+  font-weight: 600;
+  color: #2F4F4F;
+}
+
+.highlight {
+  color: #022673;
+  font-size: 1.1rem;
+}
+
+/* Descripción dentro de la tarjeta (MODIFICADO) */
+.card-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #2F4F4F;
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+}
+
+/* --- BOTONES GENERALES (MODIFICADO) --- */
+.btn-primary,
+.btn-secondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #294b76;
+  color: white;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #071743;
+}
+
+.btn-secondary {
+  background-color: #0c044c;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #39549d;
+  color: white;
+}
