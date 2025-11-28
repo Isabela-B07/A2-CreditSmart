@@ -1,0 +1,174 @@
+/* ====== CONTENEDOR GENERAL ====== */
+.solicitar-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+
+/* ====== TÍTULO ====== */
+.titulo-formulario {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #070c52; /* Morado oscuro */
+}
+
+
+/* ====== FORMULARIO ====== */
+.formulario {
+  background: #f9f9ff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(76, 29, 149, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+/* ====== GRUPOS ====== */
+.grupo {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.grupo label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #06075f;
+}
+
+
+.grupo input,
+.grupo select {
+  padding: 10px;
+  border: 2px solid #c4b5fd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  background: #ffffff;
+  color: #0b0b2e;
+}
+
+
+.grupo input:focus,
+.grupo select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 5px rgba(124, 58, 237, 0.5);
+}
+
+
+/* ====== ERROR ====== */
+.error {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #dc2626;
+}
+
+
+/* ====== CUOTA ESTIMADA ====== */
+.cuota {
+  text-align: center;
+  background: #ede9fe;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #0e1560;
+  border: 1px solid #c4b5fd;
+}
+
+
+/* ====== BOTONES ====== */
+.btn-morado {
+  margin-top: 10px;
+  padding: 12px;
+  text-align: center;
+  background: #17078c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+
+.btn-morado:hover {
+  background: #6b65d7;
+}
+
+
+/* botón enviar solicitud */
+.btn-rosa {
+  background: #312fb3;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+
+.btn-rosa:hover {
+  background: #2e216b;
+}
+
+
+/* ====== RESUMEN (ESTILO MEJORADO) ====== */
+.resumen {
+  margin-top: 25px;
+  padding: 25px;
+  background: #ede9fe; /* Lila suave, armoniza con todo tu diseño */
+  border-radius: 15px;
+  border-left: 6px solid #7c3aed; /* Morado principal */
+  box-shadow: 0 4px 12px rgba(76, 29, 149, 0.15); /* Sombrita suave morada */
+}
+
+
+.resumen h3 {
+  color: #0e1560; /* Azul/morado oscuro como tus labels */
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+
+.resumen p {
+  color: #1c1c3d; /* Texto oscuro elegante */
+  background: #f5f3ff; /* Tarjetitas internas muy suaves */
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #c4b5fd; /* Mismo borde que tus inputs */
+}
+
+
+/* Quitar borde al último pero conservar armonía */
+.resumen p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+/* ====== ÉXITO ====== */
+.exito {
+  margin-top: 20px;
+  background: #d1fae5;
+  color: #065f46;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #10b981;
+  font-weight: 600;
+  font-size: 17px;
+}
