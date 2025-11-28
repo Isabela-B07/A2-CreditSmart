@@ -1,0 +1,147 @@
+/* src/styles/simulador.css */
+
+
+/* SECCIÓN DEL SIMULADOR RECUADRO */
+.simulador-filtros {
+  background-color: #cbdef0;
+  border: 2px solid #1f0469;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  color: #06253c;
+}
+
+
+/* título dentro del recuadro */
+.simulador-filtros h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  margin: 0.1rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+
+/* grid interno de filtros */
+.filtros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  align-items: end;
+}
+
+
+/* cada bloque de filtro */
+.filtro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+/* labels */
+.filtro label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #06253c;
+}
+
+
+/* selects y inputs estilados */
+.filtro select,
+.filtro input[type="number"],
+.filtro input[type="text"] {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(4, 8, 93, 0.12);
+  background-color: white;
+  box-shadow: 0 1px 0 rgba(4,8,93,0.03);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #06253c;
+  transition: border-color .18s, box-shadow .18s, transform .05s;
+}
+
+
+/* focus */
+.filtro select:focus,
+.filtro input:focus {
+  outline: none;
+  border-color: #071743;
+  box-shadow: 0 4px 12px rgba(7, 23, 67, 0.06);
+}
+
+
+/* boton limpiar */
+.boton-filtros {
+  grid-column: 1 / -1; /* → hace que el botón tome TODA la fila */
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+
+
+.boton-filtros .btn-secondary {
+  padding: 0.75rem 1rem;
+  background-color: #0c044c;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+.boton-filtros .btn-secondary:hover {
+  background-color: #39549d;
+
+
+}
+
+
+
+
+
+
+
+
+/* resultado y grid de créditos*/
+.result-count {
+  max-width: 1100px;
+  margin: 1.25rem auto 0.5rem;
+  padding-left: 8px;
+  color: #3c0635;
+  font-weight: 600;
+}
+
+
+.credits-grid {
+  max-width: 1100px;
+  margin: 1rem auto 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding: 0 10px;
+}
+
+
+/* Mensaje sin resultados */
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  color: #06253c;
+}
+
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .filtros-grid {
+    grid-template-columns: 1fr;
+  }
+}
