@@ -88,7 +88,8 @@ Desarrollar una aplicación web dinámica utilizando React para la gestión, sim
 ### Solicitud de Crédito
 ![RequestCredit](public/img/RequestCredit.gif)
 
-
+### Solicitudes realizadas
+![MisSolicitudes](public/img/MisSolicitudes.gif)
 
 
 

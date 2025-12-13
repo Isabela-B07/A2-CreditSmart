@@ -5,9 +5,6 @@ import CreditCard from "../components/CreditCard";
 import Footer from "../components/Footer";
 import "../styles/credits.css";
 import "../styles/home.css";
-
-
-// Importa el servicio de Firebase
 import { getProducts } from "../firebase/products.service";
 
 

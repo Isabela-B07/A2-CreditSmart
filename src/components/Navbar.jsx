@@ -10,6 +10,7 @@ function Navbar() {
   const getHeaderClass = () => {
     if (location.pathname === "/simulator") return "header-simulador"; //Permite que el header cambie de estilo según la página
     if (location.pathname === "/request") return "header-solicitar";
+    if (location.pathname === "/mis-solicitudes") return "header-solicitudes";
     return "header-inicio";
   };
 

@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"; // Permite navegar entre rutas
+import { useNavigate } from "react-router-dom"; // Para importar el hook useNavigate
 
 // Props para que el componente sa reutilizable.
 function CreditCard({ nombre, descripcion, tasa, monto, plazo, imagen }) {
