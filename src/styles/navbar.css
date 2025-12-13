@@ -1,59 +1,47 @@
 /* src/styles/navbar.css */
 
+/* ============================= */
 /* Headers con fondo por página */
-.header-inicio {
-  padding: 2rem 0;
-  min-height: 400px;
-  background-image: url('/img/inicio.png');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  box-sizing: border-box;
-}
+/* ============================= */
 
-/*Menu Sticky
-header {
-  position: sticky;
-  top: 0; 
-  z-index: 1000; 
-} */
-
-
-.header-simulador {
-  padding: 2rem 0;
-  min-height: 400px;
-  background-image: url('/img/simulador.png');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.header-solicitar {
-  padding: 2rem 0;
-  min-height: 400px;
-  background-image: url('/img/solicitar.png');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
+.header-inicio,
+.header-simulador,
+.header-solicitar,
 .header-solicitudes {
   padding: 2rem 0;
   min-height: 400px;
-  background-image: url('/img/solicitudes.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
-/* Contenedor centrado con ancho máximo para que el contenido no sea demasiado ancho en pantallas grandes */
+.header-inicio {
+  background-image: url('/img/inicio.png');
+}
+
+.header-simulador {
+  background-image: url('/img/simulador.png');
+}
+
+.header-solicitar {
+  background-image: url('/img/solicitar.png');
+}
+
+.header-solicitudes {
+  background-image: url('/img/solicitudes.png');
+}
+
+/* ============================= */
+/* Contenedor navbar */
+/* ============================= */
+
 .encabezado {
   width: 100%;
-  max-width: 1200px; /* ajusta este valor si quieres más o menos ancho */
-  margin: 0 auto; /* centra horizontalmente */
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
@@ -61,19 +49,26 @@ header {
   box-sizing: border-box;
 }
 
+/* ============================= */
 /* Logo */
+/* ============================= */
+
 .logo-contenedor {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
+
 .logo-img {
   width: 250px;
   height: auto;
   object-fit: contain;
 }
 
+/* ============================= */
 /* Menú */
+/* ============================= */
+
 .menu {
   list-style: none;
   display: flex;
@@ -81,6 +76,7 @@ header {
   margin: 0;
   padding: 0;
 }
+
 .menu a {
   color: #ffffff;
   text-decoration: none;
@@ -88,21 +84,82 @@ header {
   font-size: 20px;
   transition: color 0.3s;
 }
+
 .menu a:hover,
 .menu a.active {
   color: #000000;
 }
 
-/* Estilos responsivos */
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  .header-inicio,
+  .header-simulador,
+  .header-solicitar,
+  .header-solicitudes {
+    min-height: 350px;
+  }
+}
+
+/* ============================= */
+/* TABLET Y MÓVIL */
+/* ============================= */
+
 @media (max-width: 768px) {
+
+  /* Header */
+  .header-inicio,
+  .header-simulador,
+  .header-solicitar,
+  .header-solicitudes {
+    min-height: auto;
+    aspect-ratio: 16 / 9;
+    background-position: center top;
+    padding: 1rem 0;
+  }
+
+  /* 🔥 Layout en columna */
+  .encabezado {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  /* Logo */
   .logo-img {
     width: 160px;
   }
+
+  /* 🔥 Menú debajo del logo y centrado */
   .menu {
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
   }
-  .header-inicio, .header-simulador, .header-solicitar {
-    padding: 1rem 0;
-    min-height: 300px;
+
+  .menu a {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+}
+
+/* ============================= */
+/* MÓVILES PEQUEÑOS */
+/* ============================= */
+
+@media (max-width: 480px) {
+  .header-inicio,
+  .header-simulador,
+  .header-solicitar,
+  .header-solicitudes {
+    aspect-ratio: 4 / 3;
+  }
+
+  .menu a {
+    font-size: 14px;
   }
 }
